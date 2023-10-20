@@ -7,8 +7,307 @@
     <title>Web Studio</title>
   </head>
   <body>
-    <div class="container">
-      Container
-    </div>
+    <header class="header">
+      <div class="header__container">
+        <a class="logo" href="./index.html">WebStudio</a>
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link">Студія</a>
+            </li>
+            <li class="nav__item">
+              <a href="./src/pages/portfolio.html" class="nav__link">Портфоліо</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__contact contact">
+          <ul class="contact__list">
+            <li class="contact__item">
+              <a href="#" class="contact__link" target="_blank">
+                <div class="contact__icon">-</div>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="contact__item" target="_blank">
+              <a href="tel:+380961111111" class="contact__link">
+                <div class="contact__icon">-</div>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="main__section welcome-section main__section_style_welcome">
+        <h1 class="welcome-section__title">Ефективні рішення для вашого бізнесу</h1>
+        <button class="button welcome-section__button" type="button">Замовити послугу</button>
+      </section>
+      <section class="main__section features">
+        <div class="features__container">
+          <div class="grid-for-cards">
+            <div class="feature-card">
+              <div class="feature-card__img-background">
+                <img src="#" alt="antenna" width="70" height="70">
+              </div>
+              <h3 class="feature-card__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="feature-card__text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-card__img-background">
+                <img src="#" alt="clock" width="70" height="70">
+              </div>
+              <h3 class="feature-card__title">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="feature-card__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-card__img-background">
+                <img src="#" alt="diagram" width="70" height="70">
+              </div>
+              <h3 class="feature-card__title">ПЛАНУВАННЯ</h3>
+              <p class="feature-card__text">Так само консультація з широким активом значною мірою зумовлює.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-card__img-background">
+                <img src="#" alt="astronaut" width="70" height="70">
+              </div>
+              <h3 class="feature-card__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="feature-card__text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main__section study-section">
+        <div class="study-section__container">
+          <h2 class="section-title">Чим ми займаємося</h2>
+          <div class="stydy-card">
+            <img class="stydy-card__img" src="#" alt="desktop-app">
+            <div class="stydy-card__title-background">
+              <h3 class="stydy-card__title">Десктопні додатки</h3>
+            </div>
+          </div>
+          <div class="stydy-card">
+            <img class="stydy-card__img" src="#" alt="desktop-app">
+            <div class="stydy-card__title-background">
+              <h3 class="stydy-card__title">Мобільні додатки</h3>
+            </div>
+          </div>
+          <div class="stydy-card">
+            <img class="stydy-card__img" src="#" alt="desktop-app">
+            <div class="stydy-card__title-background">
+              <h3 class="stydy-card__title">Дизайнерські рішення</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main__section team-section">
+        <div class="team-section__container">
+          <h2 class="section-title">Наша команда</h2>
+          <div class="grid-for-cards">
+            <div class="team-card">
+              <img src="#" alt="people">
+              <div class="team-card__info-wrapper">
+                <h3 class="team-card__title">Ігор Дем'яненко</h3>
+                <p class="team-card__text">Product Designer</p>
+              </div>
+              <ul class="social-list team-card__list">
+                <li class="social-list__item">
+                  <a href="social-list__link">
+                    <div class="social-list__icon">svg</div>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="social-list__link">
+                    <div class="social-list__icon">svg</div>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="social-list__link">
+                    <div class="social-list__icon">svg</div>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="social-list__link">
+                    <div class="social-list__icon">svg</div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="team-card">
+              <img src="#" alt="people">
+              <div class="team-card__info-wrapper">
+                <h3 class="team-card__title">Ольга Рєпіна</h3>
+                <p class="team-card__position">Frontend Developer</p>
+              </div>
+              <ul class="team-card__list">
+                <li class="team-card__item">
+                  <a href="team-card__link">
+                    <div class="team-card__icon">svg</div>
+                  </a>
+                </li>
+                <li class="team-card__item">
+                  <a href="team-card__link">
+                    <div class="team-card__icon">svg</div>
+                  </a>
+                </li>
+                <li class="team-card__item">
+                  <a href="team-card__link">
+                    <div class="team-card__icon">svg</div>
+                  </a>
+                </li>
+                <li class="team-card__item">
+                  <a href="team-card__link">
+                    <div class="team-card__icon">svg</div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="team-card">
+              <img src="#" alt="people">
+              <div class="team-card__info-wrapper">
+                <h3 class="team-card__title">Микола Тарасов</h3>
+                <p class="team-card__position">Marketing</p>
+              </div>
+              <ul class="team-card__list">
+                <li class="team-card__item">
+                  <a href="team-card__link">
+                    <div class="team-card__icon">svg</div>
+                  </a>
+                </li>
+                <li class="team-card__item">
+                  <a href="team-card__link">
+                    <div class="team-card__icon">svg</div>
+                  </a>
+                </li>
+                <li class="team-card__item">
+                  <a href="team-card__link">
+                    <div class="team-card__icon">svg</div>
+                  </a>
+                </li>
+                <li class="team-card__item">
+                  <a href="team-card__link">
+                    <div class="team-card__icon">svg</div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="team-card">
+              <img src="#" alt="people">
+              <div class="team-card__info-wrapper">
+                <h3 class="team-card__title">Михайло Єрмаков</h3>
+                <p class="team-card__position">UI Designer</p>
+              </div>
+              <ul class="team-card__list">
+                <li class="team-card__item">
+                  <a href="team-card__link">
+                    <div class="team-card__icon">svg</div>
+                  </a>
+                </li>
+                <li class="team-card__item">
+                  <a href="team-card__link">
+                    <div class="team-card__icon">svg</div>
+                  </a>
+                </li>
+                <li class="team-card__item">
+                  <a href="team-card__link">
+                    <div class="team-card__icon">svg</div>
+                  </a>
+                </li>
+                <li class="team-card__item">
+                  <a href="team-card__link">
+                    <div class="team-card__icon">svg</div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main__section clients-section">
+        <div class="clients-section__container">
+          <h2 class="clients-section__title">Постійні клієнти</h2>
+          <div class="grid-for-cards">
+            <div class="client-card">
+              <div class="client-card__icon">svg</div>
+            </div>
+            <div class="client-card">
+              <div class="client-card__icon">svg</div>
+            </div>
+            <div class="client-card">
+              <div class="client-card__icon">svg</div>
+            </div>
+            <div class="client-card">
+              <div class="client-card__icon">svg</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <footer class="footer__container">
+        <div class="footer__info">
+          <a class="logo" href="#">WebStudio</a>
+          <address class="contact contact_column">
+            <ul class="contact__list">
+              <li class="contact__item" target="_blank">
+                <a href="mailto:info@devstudio.com" class="contact__link">
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="contact__item" target="_blank">
+                <a href="tel:+380961111111" class="contact__link">
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="contact__item" href="https://maps.app.goo.gl/u9zcwMpa4vgSbkL76" target="_blank">
+                <a href="tel:+380961111111" class="contact__link">
+                  м. Київ, пр-т Лесі Українки, 26
+                </a>
+              </li>
+          </address>
+        </div>
+        <div class="footer__social">
+          <h2 class="footer__title">приєднуйтесь</h2>
+          <ul class="social-list team-card__list">
+            <li class="social-list__item">
+              <a href="social-list__link">
+                <div class="social-list__icon">svg</div>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="social-list__link">
+                <div class="social-list__icon">svg</div>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="social-list__link">
+                <div class="social-list__icon">svg</div>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="social-list__link">
+                <div class="social-list__icon">svg</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__sending">
+          <h2 class="footer__title">Підпишіться на розсилку</h2>
+          <div class="sending">
+            <div class="Input">
+              <input class="Input__this" placeholder="E-mail" type="text">
+            </div>
+            <button class="button" type="submit">
+              <div class="button__icon"></div>
+              Підписатися
+            </button>
+          </div>
+  
+        </div>
+      </footer>
+    </footer>
   </body>
 </html>
