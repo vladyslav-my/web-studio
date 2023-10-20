@@ -1,0 +1,19 @@
+//* Vars
+$layoutColor: #fff;
+$textColor: #212121;
+
+//** Fonts by default:
+$fontFamily: "Roboto"; //? name
+$fontSize: rem(16); //? size
+$fontColor: $textColor; //? color
+
+$minWidth: 320; //? min width of layout
+$maxWidthContainer: 1600; //? max width of container
+$containerPadding: 15; //? padding for container
+$containerWidth: $maxWidthContainer + $containerPadding * 2; //? width full container
+
+//** Break-points:
+$pc: $containerWidth;
+$tablet: 991.98;
+$mobile: 767.98;
+$mobileSmall: 479.98;
