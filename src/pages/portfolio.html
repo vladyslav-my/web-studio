@@ -9,31 +9,39 @@
   <body>
     <header class="header">
       <div class="header__container">
-        <a class="logo" href="./portfolio.html">WebStudio</a>
-        <nav class="header__nav nav">
+        <a class="logo" href="../../index.html">
+          <svg class="logo__icon" viewBox="0 0 232 32">
+            <use href="../assets/icons/common.svg#logo" />
+          </svg>
+        </a>
+        <nav class="nav header__nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link" href="../../index.html">Студія</a>
+              <a href="../../index.html" class="nav__link">Студія</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="./portfolio.html">Портфоліо</a>
+              <a href="pages/portfolio.html" class="nav__link">Портфоліо</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Контакти</a>
+              <a href="#" class="nav__link">Контакти</a>
             </li>
           </ul>
         </nav>
         <div class="header__contact contact">
           <ul class="contact__list">
             <li class="contact__item">
-              <a href="#" class="contact__link" target="_blank">
-                <div class="contact__icon">-</div>
+              <a href="mailto:info@devstudio.com" class="contact__link" target="_blank">
+                <svg class="contact__icon" viewBox="0 0 43 32">
+                  <use href="../assets/icons/common.svg#email" />
+                </svg>
                 info@devstudio.com
               </a>
             </li>
             <li class="contact__item" target="_blank">
               <a href="tel:+380961111111" class="contact__link">
-                <div class="contact__icon">-</div>
+                <svg class="contact__icon" viewBox="0 0 20 32">
+                  <use href="../assets/icons/common.svg#smartphone" />
+                </svg>
                 +38 096 111 11 11
               </a>
             </li>
@@ -51,30 +59,37 @@
       </div>
       <div class="grid-for-cards">
          <div class="filter-card">
-            <img class="filter-card__image" src="" alt="">
-            <h3 class="filter-card__title">Постер New Orlean vs Golden Star</h3>
-            <p class="filter-card__text">Дизайн</p>
+            <div class="filter-card__flexibility-image">
+              <div class="filter-card__desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
+              <img class="filter-card__image" src="../assets/contents/portfolio/1.png" alt="Tehnocrack">
+            </div>
+            <h3 class="filter-card__title">Технокряк</h3>
+            <p class="filter-card__text">Веб-сайт</p>
          </div>
       </div>
     </main>
     <footer class="footer">
       <footer class="footer__container">
         <div class="footer__info">
-          <a class="logo" href="#">WebStudio</a>
+          <a class="logo" href="pages/portfolio.html">
+            <svg class="logo__icon">
+              <use href="../assets/icons/common.svg#logo" />
+            </svg>
+          </a>
           <address class="contact contact_column">
             <ul class="contact__list">
-              <li class="contact__item" target="_blank">
-                <a href="mailto:info@devstudio.com" class="contact__link">
+              <li class="contact__item">
+                <a href="mailto:info@devstudio.com" class="contact__link" target="_blank">
                   info@devstudio.com
                 </a>
               </li>
-              <li class="contact__item" target="_blank">
-                <a href="tel:+380961111111" class="contact__link">
+              <li class="contact__item">
+                <a href="tel:+380961111111" class="contact__link" target="_blank">
                   +38 096 111 11 11
                 </a>
               </li>
-              <li class="contact__item" href="https://maps.app.goo.gl/u9zcwMpa4vgSbkL76" target="_blank">
-                <a href="tel:+380961111111" class="contact__link">
+              <li class="contact__item">
+                <a class="contact__link" href="https://maps.app.goo.gl/u9zcwMpa4vgSbkL76" target="_blank">
                   м. Київ, пр-т Лесі Українки, 26
                 </a>
               </li>
@@ -84,41 +99,97 @@
           <h2 class="footer__title">приєднуйтесь</h2>
           <ul class="social-list team-card__list">
             <li class="social-list__item">
-              <a href="social-list__link">
-                <div class="social-list__icon">svg</div>
+              <a class="social-list__link" href="https://www.instagram.com" target="_blank">
+                <svg class="social-list__icon" viewBox="0 0 32 32">
+                  <use href="../assets/icons/common.svg#instagram" />
+                </svg>
               </a>
             </li>
             <li class="social-list__item">
-              <a href="social-list__link">
-                <div class="social-list__icon">svg</div>
+              <a href="social-list__link" href="https://twitter.com" target="_blank">
+                <svg class="social-list__icon">
+                  <use href="../assets/icons/common.svg#twitter" />
+                </svg>
               </a>
             </li>
             <li class="social-list__item">
-              <a href="social-list__link">
-                <div class="social-list__icon">svg</div>
+              <a href="social-list__link" href="https://www.facebook.com" target="_blank">
+                <svg class="social-list__icon" viewBox="0 0 18 32">
+                  <use href="../assets/icons/common.svg#facebook" />
+                </svg>
               </a>
             </li>
             <li class="social-list__item">
-              <a href="social-list__link">
-                <div class="social-list__icon">svg</div>
+              <a href="social-list__link" href="https://www.linkedin.com" target="_blank">
+                <svg class="social-list__icon" viewBox="0 0 32 32">
+                  <use href="../assets/icons/common.svg#linkedin" />
+                </svg>
               </a>
             </li>
           </ul>
         </div>
         <div class="footer__sending">
           <h2 class="footer__title">Підпишіться на розсилку</h2>
-          <div class="sending">
-            <div class="Input">
-              <input class="Input__this" placeholder="E-mail" type="text">
+          <form class="sending">
+            <div class="input">
+              <input class="input__this" placeholder="E-mail" type="text">
             </div>
             <button class="button" type="submit">
-              <div class="button__icon"></div>
+              <svg class="client-card__icon" viewBox="0 0 57 32">
+                <use href="../assets/icons/common.svg#send" />
+              </svg>
               Підписатися
             </button>
-          </div>
-  
+          </form>
         </div>
       </footer>
     </footer>
+    <!-- <div class="modal">
+          <div class="modal__containing">
+            <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
+            <form class="modal-form" action="" method="post">
+              <div class="modal-form__field">
+                <label class="modal-form__label" for="username">Ім'я</label>
+                <div class="input modal-form__input">
+                  <svg class="input__icon" viewBox="0 0 32 32">
+                    <use href="../assets/icons/common.svg#user" />
+                  </svg>
+                  <input class="input__this" type="text" name="username">
+                </div>
+              </div>
+              <div class="modal-form__field">
+                <label class="modal-form__label" for="phone">Телефон</label>
+                <div class="input modal-form__input">
+                  <svg class="input__icon" viewBox="0 0 14 14">
+                    <use href="../assets/icons/common.svg#phone" />
+                  </svg>
+                  <input class="input__this" type="text" name="phone">
+                </div>
+              </div>
+              <div class="modal-form__field">
+                <label class="modal-form__label" for="email">Пошта</label>
+                <div class="input modal-form__input">
+                  <svg class="input__icon" viewBox="0 0 14 14">
+                    <use href="../assets/icons/common.svg#phone" />
+                  </svg>
+                  <input class="input__this" type="text" name="email">
+                </div>
+              </div>
+              <div class="modal-form__field">
+                <label class="modal-form__label" for="email">Коментар</label>
+                <textarea class="modal-form__textarea" placeholder="Введіть текст">
+              </div>
+              <div class="modal-form__approval approval">
+                <input class="approval__checkbox" type="checkbox" name="approval">
+                <label class="approval__label" for="approval">
+                  Погоджуюся з розсилкою та приймаю 
+                  <a class="approval__link" href="#">Умови договору</a>
+                </label>
+              </div>
+              <button class="button button_big" type="submit">Відправити</button>
+            </form>
+          </div>
+    </div> -->
+    </div>
   </body>
 </html>
