@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.8.7",
+    "prettier": "3.0.3",
     "sass": "^1.69.4",
     "stylelint": "^15.11.0",
     "stylelint-config-recommended-scss": "^13.0.0",

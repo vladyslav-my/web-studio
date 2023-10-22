@@ -1,0 +1,111 @@
+.portfolio-card {
+   $p: &;
+   padding-bottom: rem(20);
+
+   transition: box-shadow $primaryTransition;
+
+   border: 1px solid #EEE;
+
+   background: #FFF;
+   box-shadow: 0;
+
+   &:hover {
+      box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+
+      #{$p}__desc-wrapper {
+         opacity: 1;
+      }
+   }
+   
+   // .portfolio-card__flexibility-image
+
+   &__flexability-image {
+      padding-bottom: percent(294, 370);
+
+      &:not(:last-child) {
+         margin-bottom: rem(20);
+      }
+   }
+
+   // .portfolio-card__desc-wrappe
+
+   &__desc-wrapper {
+      position: absolute;
+      z-index: 2;
+
+      display: grid;
+      overflow-y: auto;
+      place-items: center;
+
+      padding: em(24);
+
+      transition: opacity $primaryTransition;
+
+      opacity: 0;
+      background: rgba(33, 150, 243, 0.90);
+      inset: 0;  
+
+      &::-webkit-scrollbar {
+         width: rem(8);
+         height: rem(0);
+         &-thumb {
+             border-radius: rem(4);
+             background-color: rgba(136, 136, 136, 0.5);
+             
+             &:hover {
+                 background-color: rgba(136, 136, 136, 0.8);
+             }
+         }
+      }
+   }
+
+   // .portfolio-card__desc
+
+   &__desc {
+      flex: 1 1 auto;
+
+      vertical-align: middle;
+
+      letter-spacing: em(0.54);
+
+      color: #FFF;
+
+      font-size: em(18);
+      line-height: math.div(28, 18);
+   }
+
+   // .portfolio-card__image
+
+   &__image {
+   }
+
+   // .portfolio-card__info-wrapper
+
+   &__info-wrapper {
+      padding: 0 em(24);
+   }
+
+   // .portfolio-card__title
+
+   &__title {
+      letter-spacing: em(1.08);
+
+      font-size: em(18);
+      font-weight: 700;
+      line-height: math.div(36, 18);
+
+      &:not(:last-child) {
+         margin-bottom: rem(4);
+      }
+   }
+
+   // .portfolio-card__text
+
+   &__text {
+      letter-spacing: 0.48px;
+
+      color: #757575;
+
+      line-height: math.div(30, 16);
+   }
+}

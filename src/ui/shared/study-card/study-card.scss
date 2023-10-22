@@ -1,0 +1,43 @@
+.study-card {
+   position: relative;
+   // .stydy-card__flexability-image
+
+   &__flexability-image {
+      padding-bottom: percent(294, 370);
+   }
+
+   // .stydy-card__image
+
+   &__image {
+   }
+
+   // .stydy-card__title-background
+
+   &__title-background {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 100%;
+      height: percent(70, 294);
+
+      background: rgba(47, 48, 58, 0.80);
+   }
+
+   // .stydy-card__title
+
+   &__title {
+      text-align: center;
+      letter-spacing: em(0.42);
+      text-transform: uppercase;
+
+      color: #FFF;
+
+      font-size: em(14);
+      font-weight: 700;
+   }
+}

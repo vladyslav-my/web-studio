@@ -1,20 +1,24 @@
-import { fileURLToPath } from "url";
+import path from "path";
 import { defineConfig } from "vite";
 import { ViteEjsPlugin } from "vite-plugin-ejs";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-	publicDir: 'src/',
+	publicDir: path.resolve(__dirname, 'src'),
 	plugins: [
-		ViteEjsPlugin(),
+		ViteEjsPlugin((viteConfig) => {
+			return {
+			  root: viteConfig.root
+			}
+		 }),
 	],
 	resolve: {
 		alias: 
 		[
-			{ find: '@', replacement: fileURLToPath(new URL('./src', import.meta.url)) }
+			{ find: '@', replacement: path.resolve(__dirname, 'src') }
 		],
-		
 	},
 	css: {},
 	define: {},
 });
+

@@ -1,5 +1,5 @@
 [class*="__container"] {
-   box-sizing: border-box;
+   box-sizing: content-box;
    width: 100%;
    max-width: rem($maxWidthContainer);
    margin: 0 auto;

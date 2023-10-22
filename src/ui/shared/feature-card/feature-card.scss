@@ -1,0 +1,51 @@
+.feature-card {
+
+   // .feature-card__icon-background
+
+   &__icon-background {
+      display: flex;
+      justify-content: center;
+
+      padding: rem(25) 0;
+
+      background-color: $grayColor;
+
+      &:not(:last-child) {
+         margin-bottom: rem(30);
+      }
+   }
+
+    // .feature-card__icon
+
+   &__icon {
+      width: em(70);
+      height: em(70);
+   }
+
+   // .feature-card__title
+
+   &__title {
+      letter-spacing: em(0.42);
+      text-transform: uppercase;
+
+      font-size: em(14);
+      font-weight: 700;
+
+      &:not(:last-child) {
+         margin-bottom: rem(10);
+      }
+   }
+
+   // .feature-card__text
+
+   &__text {
+      letter-spacing: em(0.42);
+
+      color: #757575;
+
+      font-size: em(14);
+      
+      font-weight: 400;
+      line-height: math.div(24, 14);
+   }
+}

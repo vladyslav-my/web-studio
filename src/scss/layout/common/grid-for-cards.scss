@@ -1,0 +1,21 @@
+.grid-for-cards {
+   display: grid;
+   gap: em(30);
+
+   &_v1 {
+      grid-template-columns: repeat(auto-fit, minmax(em(200), 1fr));
+   }
+
+   &_v2 {
+      grid-template-columns: repeat(auto-fit, minmax(em(300), 1fr));
+      
+   }
+
+   &_v3 {
+      grid-template-columns: repeat(auto-fit, minmax(em(170), 1fr));
+   }
+
+   &_v4 {
+      grid-template-columns: repeat(auto-fit, minmax(em(230), 1fr));
+   }
+}

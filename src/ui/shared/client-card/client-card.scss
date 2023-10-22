@@ -1,0 +1,33 @@
+.client-card {
+   $p: &;
+
+   // .client-card__link
+
+   &__link {
+      display: flex;
+      justify-content: center;
+   
+      padding: rem(16) rem(32);
+
+      transition: color $primaryTransition;
+   
+      color: #AFB1B8;
+      border: 1px solid currentColor;
+      border-radius: 4px;
+
+      &:hover {
+         color: #2196F3;
+      }
+      
+   }
+
+   // .client-card__icon
+
+   &__icon {
+      display: block;
+
+      width: em(106);
+      height: em(60);
+      fill: currentColor;
+   }
+}
