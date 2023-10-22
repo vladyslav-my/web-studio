@@ -7,143 +7,47 @@
     <title>Web Studio</title>
   </head>
   <body>
-    <header class="header">
-      <div class="header__container">
-        <a class="logo" href="../../index.html">
-          <svg class="logo__icon" viewBox="0 0 232 32">
-            <use href="../assets/icons/common.svg#logo" />
-          </svg>
-        </a>
-        <nav class="nav header__nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="../../index.html" class="nav__link">Студія</a>
-            </li>
-            <li class="nav__item">
-              <a href="pages/portfolio.html" class="nav__link">Портфоліо</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Контакти</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header__contact contact">
-          <ul class="contact__list">
-            <li class="contact__item">
-              <a href="mailto:info@devstudio.com" class="contact__link" target="_blank">
-                <svg class="contact__icon" viewBox="0 0 43 32">
-                  <use href="../assets/icons/common.svg#email" />
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="contact__item" target="_blank">
-              <a href="tel:+380961111111" class="contact__link">
-                <svg class="contact__icon" viewBox="0 0 20 32">
-                  <use href="../assets/icons/common.svg#smartphone" />
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
     <main class="main">
-      <div class="filter-buttons">
-         <button class="button button_state_active" type="button">Усі</button>
-         <button class="button" type="button">Веб-сайти</button>
-         <button class="button" type="button">Додатки</button>
-         <button class="button" type="button">Дизайн</button>
-         <button class="button" type="button">Маркетинг</button>
-      </div>
-      <div class="grid-for-cards">
-         <div class="filter-card">
-            <div class="filter-card__flexibility-image">
-              <div class="filter-card__desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
-              <img class="filter-card__image" src="../assets/contents/portfolio/1.png" alt="Tehnocrack">
-            </div>
-            <h3 class="filter-card__title">Технокряк</h3>
-            <p class="filter-card__text">Веб-сайт</p>
+      <div class="portfolio">
+        <div class="portfolio__container">
+          <div class="buttons-group portfolio__filters" hidden>
+            <button class="button button_state_active" type="button">Усі</button>
+            <button class="button" type="button">Веб-сайти</button>
+            <button class="button" type="button">Додатки</button>
+            <button class="button" type="button">Дизайн</button>
+            <button class="button" type="button">Маркетинг</button>
          </div>
+         <div class="grid-for-cards grid-for-cards_v2">
+          <div class="portfolio-card">
+              <div class="portfolio-card__flexability-image">
+                <div class="portfolio-card__desc-wrapper">
+                  <div class="portfolio-card__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, ducimus. Iure ullam commodi eveniet. Consequuntur, nam molestiae! Rerum, suscipit impedit excepturi ipsa aspernatur labore neque? Mollitia beatae esse ut eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus culpa excepturi et vel. Atque velit a nemo sed quod optio nam ipsam dolor laborum amet, itaque consequatur? Quam, eligendi laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus provident veritatis consectetur dolore quaerat repellat! Nihil dolorum cum, deleniti exercitationem enim provident quos commodi soluta non. Voluptatibus totam natus fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, mollitia beatae illo minima eius tempora repellat saepe obcaecati iusto maiores eum ullam, atque laudantium. Eveniet consectetur sint beatae adipisci a.</div>
+                </div>
+                <img class="portfolio-card__image" src="../assets/contents/portfolio/1.png" alt="Tehnocrack">
+              </div>
+              <div class="portfolio-card__info-wrapper">
+                <h3 class="portfolio-card__title">Технокряк</h3>
+                <p class="portfolio-card__text">Веб-сайт</p>
+              </div>
+          </div>
+          <div class="portfolio-card">
+              <div class="portfolio-card__flexability-image">
+                <div class="portfolio-card__desc-wrapper">
+                  <div class="portfolio-card__desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
+                </div>
+                <img class="portfolio-card__image" src="../assets/contents/portfolio/1.png" alt="Tehnocrack">
+              </div>
+              <div class="portfolio-card__info-wrapper">
+                <h3 class="portfolio-card__title">Технокряк</h3>
+                <p class="portfolio-card__text">Веб-сайт</p>
+              </div>
+          </div>
+        </div>
+        </div>
       </div>
+
+
     </main>
-    <footer class="footer">
-      <footer class="footer__container">
-        <div class="footer__info">
-          <a class="logo" href="pages/portfolio.html">
-            <svg class="logo__icon">
-              <use href="../assets/icons/common.svg#logo" />
-            </svg>
-          </a>
-          <address class="contact contact_column">
-            <ul class="contact__list">
-              <li class="contact__item">
-                <a href="mailto:info@devstudio.com" class="contact__link" target="_blank">
-                  info@devstudio.com
-                </a>
-              </li>
-              <li class="contact__item">
-                <a href="tel:+380961111111" class="contact__link" target="_blank">
-                  +38 096 111 11 11
-                </a>
-              </li>
-              <li class="contact__item">
-                <a class="contact__link" href="https://maps.app.goo.gl/u9zcwMpa4vgSbkL76" target="_blank">
-                  м. Київ, пр-т Лесі Українки, 26
-                </a>
-              </li>
-          </address>
-        </div>
-        <div class="footer__social">
-          <h2 class="footer__title">приєднуйтесь</h2>
-          <ul class="social-list team-card__list">
-            <li class="social-list__item">
-              <a class="social-list__link" href="https://www.instagram.com" target="_blank">
-                <svg class="social-list__icon" viewBox="0 0 32 32">
-                  <use href="../assets/icons/common.svg#instagram" />
-                </svg>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a href="social-list__link" href="https://twitter.com" target="_blank">
-                <svg class="social-list__icon">
-                  <use href="../assets/icons/common.svg#twitter" />
-                </svg>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a href="social-list__link" href="https://www.facebook.com" target="_blank">
-                <svg class="social-list__icon" viewBox="0 0 18 32">
-                  <use href="../assets/icons/common.svg#facebook" />
-                </svg>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a href="social-list__link" href="https://www.linkedin.com" target="_blank">
-                <svg class="social-list__icon" viewBox="0 0 32 32">
-                  <use href="../assets/icons/common.svg#linkedin" />
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__sending">
-          <h2 class="footer__title">Підпишіться на розсилку</h2>
-          <form class="sending">
-            <div class="input">
-              <input class="input__this" placeholder="E-mail" type="text">
-            </div>
-            <button class="button" type="submit">
-              <svg class="client-card__icon" viewBox="0 0 57 32">
-                <use href="../assets/icons/common.svg#send" />
-              </svg>
-              Підписатися
-            </button>
-          </form>
-        </div>
-      </footer>
-    </footer>
     <!-- <div class="modal">
           <div class="modal__containing">
             <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>

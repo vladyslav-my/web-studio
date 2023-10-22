@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="scss/index.scss">
+    <link rel="stylesheet" href="./src/scss/index.scss">
     <title>Web Studio</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" hidden>
       <div class="header__container">
         <a class="logo" href="index.html">
           <svg class="logo__icon" viewBox="0 0 232 32">
@@ -37,7 +37,7 @@
                 info@devstudio.com
               </a>
             </li>
-            <li class="contact__item" target="_blank">
+            <li class="contact__item">
               <a href="tel:+380961111111" class="contact__link">
                 <svg class="contact__icon" viewBox="0 0 20 32">
                   <use href="assets/icons/common.svg#smartphone" />
@@ -50,18 +50,18 @@
       </div>
     </header>
     <main class="main">
-      <section class="welcome-section main__section main__section_style_welcome">
+      <section class="welcome-section main__section main__section_style_welcome" hidden>
         <img class="welcome-section__background" src="assets/contents/studio/welcome.jpg" alt="welcome" width="1600" height="600">
         <h1 class="welcome-section__title">Ефективні рішення для вашого бізнесу</h1>
         <button class="button welcome-section__button" type="button">Замовити послугу</button>
       </section>
       <section class="features-section main__section">
         <div class="features-section__container">
-          <ul class="grid-for-cards">
+          <ul class="grid-for-cards grid-for-cards_v1">
             <li class="feature-card">
               <div class="feature-card__icon-background">
-                <svg class="contact__icon">
-                  <use href="assets/icons/features.svg#1" />
+                <svg class="feature-card__icon">
+                  <use href="assets/icons/features.svg#antenna" />
                 </svg>
               </div>
               <h3 class="feature-card__title">УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -69,8 +69,8 @@
             </li>
             <li class="feature-card">
               <div class="feature-card__icon-background">
-                <svg class="contact__icon">
-                  <use href="assets/icons/features.svg#2" />
+                <svg class="feature-card__icon">
+                  <use href="assets/icons/features.svg#clock" />
                 </svg>
               </div>
               <h3 class="feature-card__title">ПУНКТУАЛЬНІСТЬ</h3>
@@ -78,8 +78,8 @@
             </li>
             <li class="feature-card">
               <div class="feature-card__icon-background">
-                <svg class="contact__icon">
-                  <use href="assets/icons/features.svg#3" />
+                <svg class="feature-card__icon">
+                  <use href="assets/icons/features.svg#diagram" />
                 </svg>
               </div>
               <h3 class="feature-card__title">ПЛАНУВАННЯ</h3>
@@ -87,8 +87,8 @@
             </li>
             <li class="feature-card">
               <div class="feature-card__icon-background">
-                <svg class="contact__icon">
-                  <use href="assets/icons/features.svg#4" />
+                <svg class="feature-card__icon">
+                  <use href="assets/icons/features.svg#astronaut" />
                 </svg>
               </div>
               <h3 class="feature-card__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
@@ -100,10 +100,10 @@
       <section class="study-section main__section">
         <div class="study-section__container">
           <h2 class="section-title">Чим ми займаємося</h2>
-          <ul class="grid-for-cards">
+          <ul class="grid-for-cards grid-for-cards_v1">
             <li class="stydy-card">
               <div class="stydy-card__flexability-image">
-                <img class="stydy-card__image" src="assets/contents/studio/1.jpg" alt="desktop-app" width="370" height="294">
+                <img class="stydy-card__image" src="assets/contents/studio/study/1.jpg" alt="desktop-app" width="370" height="294">
               </div>
               <div class="stydy-card__title-background">
                 <h3 class="stydy-card__title">Десктопні додатки</h3>
@@ -111,7 +111,7 @@
             </li>
             <li class="stydy-card">
               <div class="stydy-card__flexability-image">
-                <img class="stydy-card__image" src="assets/contents/studio/2.jpg" alt="mobile-app" width="370" height="294">
+                <img class="stydy-card__image" src="assets/contents/studio/study/2.jpg" alt="mobile-app" width="370" height="294">
               </div>
               <div class="stydy-card__title-background">
                 <h3 class="stydy-card__title">Мобільні додатки</h3>
@@ -119,7 +119,7 @@
             </li>
             <li class="stydy-card">
               <div class="stydy-card__flexability-image">
-                <img class="stydy-card__image" src="assets/contents/studio/3.jpg" alt="design-solution" width="370" height="294">
+                <img class="stydy-card__image" src="assets/contents/studio/study/3.jpg" alt="design-solution" width="370" height="294">
               </div>
               <div class="stydy-card__title-background">
                 <h3 class="stydy-card__title">Дизайнерські рішення</h3>
@@ -131,7 +131,7 @@
       <section class="team-section main__section">
         <div class="team-section__container">
           <h2 class="section-title">Наша команда</h2>
-          <ul class="grid-for-cards">
+          <ul class="grid-for-cards grid-for-cards_v2">
             <li class="team-card">
               <div class="team-card__flexability-image">
                 <img class="team-card__image" src="assets/contents/studio/teams/1.jpg" alt="person" width="270" height="260">
@@ -149,21 +149,21 @@
                   </a>
                 </li>
                 <li class="social-list__item">
-                  <a href="social-list__link" href="https://twitter.com" target="_blank">
+                  <a class="social-list__link" href="https://twitter.com" target="_blank">
                     <svg class="social-list__icon">
                       <use href="assets/icons/common.svg#twitter" />
                     </svg>
                   </a>
                 </li>
                 <li class="social-list__item">
-                  <a href="social-list__link" href="https://www.facebook.com" target="_blank">
+                  <a class="social-list__link" href="https://www.facebook.com" target="_blank">
                     <svg class="social-list__icon" viewBox="0 0 18 32">
                       <use href="assets/icons/common.svg#facebook" />
                     </svg>
                   </a>
                 </li>
                 <li class="social-list__item">
-                  <a href="social-list__link" href="https://www.linkedin.com" target="_blank">
+                  <a class="social-list__link" href="https://www.linkedin.com" target="_blank">
                     <svg class="social-list__icon" viewBox="0 0 32 32">
                       <use href="assets/icons/common.svg#linkedin" />
                     </svg>
@@ -173,11 +173,11 @@
             </li>
             <li class="team-card">
               <div class="team-card__flexability-image">
-                <img class="team-card__image" src="assets/contents/studio/teams/2" alt="person" width="270" height="260">
+                <img class="team-card__image" src="assets/contents/studio/teams/2.jpg" alt="person" width="270" height="260">
               </div>
               <div class="team-card__info-wrapper">
                 <h3 class="team-card__title">Ольга Рєпіна</h3>
-                <p class="team-card__position">Frontend Developer</p>
+                <p class="team-card__text">Frontend Developer</p>
               </div>
               <ul class="social-list team-card__list">
                 <li class="social-list__item">
@@ -188,21 +188,21 @@
                   </a>
                 </li>
                 <li class="social-list__item">
-                  <a href="social-list__link" href="https://twitter.com" target="_blank">
+                  <a class="social-list__link" href="https://twitter.com" target="_blank">
                     <svg class="social-list__icon">
                       <use href="assets/icons/common.svg#twitter" />
                     </svg>
                   </a>
                 </li>
                 <li class="social-list__item">
-                  <a href="social-list__link" href="https://www.facebook.com" target="_blank">
+                  <a class="social-list__link" href="https://www.facebook.com" target="_blank">
                     <svg class="social-list__icon" viewBox="0 0 18 32">
                       <use href="assets/icons/common.svg#facebook" />
                     </svg>
                   </a>
                 </li>
                 <li class="social-list__item">
-                  <a href="social-list__link" href="https://www.linkedin.com" target="_blank">
+                  <a class="social-list__link" href="https://www.linkedin.com" target="_blank">
                     <svg class="social-list__icon" viewBox="0 0 32 32">
                       <use href="assets/icons/common.svg#linkedin" />
                     </svg>
@@ -216,7 +216,7 @@
               </div>
               <div class="team-card__info-wrapper">
                 <h3 class="team-card__title">Микола Тарасов</h3>
-                <p class="team-card__position">Marketing</p>
+                <p class="team-card__text">Marketing</p>
               </div>
               <ul class="social-list team-card__list">
                 <li class="social-list__item">
@@ -227,21 +227,21 @@
                   </a>
                 </li>
                 <li class="social-list__item">
-                  <a href="social-list__link" href="https://twitter.com" target="_blank">
+                  <a class="social-list__link" href="https://twitter.com" target="_blank">
                     <svg class="social-list__icon">
                       <use href="assets/icons/common.svg#twitter" />
                     </svg>
                   </a>
                 </li>
                 <li class="social-list__item">
-                  <a href="social-list__link" href="https://www.facebook.com" target="_blank">
+                  <a class="social-list__link" href="https://www.facebook.com" target="_blank">
                     <svg class="social-list__icon" viewBox="0 0 18 32">
                       <use href="assets/icons/common.svg#facebook" />
                     </svg>
                   </a>
                 </li>
                 <li class="social-list__item">
-                  <a href="social-list__link" href="https://www.linkedin.com" target="_blank">
+                  <a class="social-list__link" href="https://www.linkedin.com" target="_blank">
                     <svg class="social-list__icon" viewBox="0 0 32 32">
                       <use href="assets/icons/common.svg#linkedin" />
                     </svg>
@@ -255,7 +255,7 @@
               </div>
               <div class="team-card__info-wrapper">
                 <h3 class="team-card__title">Михайло Єрмаков</h3>
-                <p class="team-card__position">UI Designer</p>
+                <p class="team-card__text">UI Designer</p>
               </div>
               <ul class="social-list team-card__list">
                 <li class="social-list__item">
@@ -266,21 +266,21 @@
                   </a>
                 </li>
                 <li class="social-list__item">
-                  <a href="social-list__link" href="https://twitter.com" target="_blank">
+                  <a class="social-list__link" href="https://twitter.com" target="_blank">
                     <svg class="social-list__icon">
                       <use href="assets/icons/common.svg#twitter" />
                     </svg>
                   </a>
                 </li>
                 <li class="social-list__item">
-                  <a href="social-list__link" href="https://www.facebook.com" target="_blank">
+                  <a class="social-list__link" href="https://www.facebook.com" target="_blank">
                     <svg class="social-list__icon" viewBox="0 0 18 32">
                       <use href="assets/icons/common.svg#facebook" />
                     </svg>
                   </a>
                 </li>
                 <li class="social-list__item">
-                  <a href="social-list__link" href="https://www.linkedin.com" target="_blank">
+                  <a class="social-list__link" href="https://www.linkedin.com" target="_blank">
                     <svg class="social-list__icon" viewBox="0 0 32 32">
                       <use href="assets/icons/common.svg#linkedin" />
                     </svg>
@@ -294,43 +294,55 @@
       <section class="main__section clients-section">
         <div class="clients-section__container">
           <h2 class="clients-section__title">Постійні клієнти</h2>
-          <ul class="grid-for-cards">
+          <ul class="grid-for-cards grid-for-cards_v3">
             <li class="client-card">
-              <svg class="client-card__icon" viewBox="0 0 57 32">
-                <use href="assets/icons/clients.svg#1" />
-              </svg>
+              <a class="client-card__link" href="#">
+                <svg class="client-card__icon" viewBox="0 0 57 32">
+                  <use href="assets/icons/clients.svg#1" />
+                </svg>
+              </a>
             </li>
             <li class="client-card">
-              <svg class="client-card__icon" viewBox="0 0 57 32">
-                <use href="assets/icons/clients.svg#2" />
-              </svg>
+              <a class="client-card__link" href="#">
+                <svg class="client-card__icon" viewBox="0 0 57 32">
+                  <use href="assets/icons/clients.svg#2" />
+                </svg>
+              </a>
             </li>
             <li class="client-card">
-              <svg class="client-card__icon" viewBox="0 0 57 32">
-                <use href="assets/icons/clients.svg#3" />
-              </svg>
+              <a class="client-card__link" href="#">
+                <svg class="client-card__icon" viewBox="0 0 57 32">
+                  <use href="assets/icons/clients.svg#3" />
+                </svg>
+              </a>
             </li>
             <li class="client-card">
-              <svg class="client-card__icon" viewBox="0 0 57 32">
-                <use href="assets/icons/clients.svg#4" />
-              </svg>
+              <a class="client-card__link" href="#">
+                <svg class="client-card__icon" viewBox="0 0 57 32">
+                  <use href="assets/icons/clients.svg#4" />
+                </svg>
+              </a>
             </li>
             <li class="client-card">
-              <svg class="client-card__icon" viewBox="0 0 57 32">
-                <use href="assets/icons/clients.svg#5" />
-              </svg>
+              <a class="client-card__link" href="#">
+                <svg class="client-card__icon" viewBox="0 0 57 32">
+                  <use href="assets/icons/clients.svg#5" />
+                </svg>
+              </a>
             </li>
             <li class="client-card">
-              <svg class="client-card__icon" viewBox="0 0 57 32">
-                <use href="assets/icons/clients.svg#6" />
-              </svg>
+              <a class="client-card__link" href="#">
+                <svg class="client-card__icon" viewBox="0 0 57 32">
+                  <use href="assets/icons/clients.svg#6" />
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <footer class="footer__container">
+    <footer class="footer" hidden>
+      <div class="footer__container">
         <div class="footer__info">
           <a class="logo" href="pages/portfolio.html">
             <svg class="logo__icon">
@@ -358,7 +370,7 @@
         </div>
         <div class="footer__social">
           <h2 class="footer__title">приєднуйтесь</h2>
-          <ul class="social-list team-card__list">
+          <ul class="social-list">
             <li class="social-list__item">
               <a class="social-list__link" href="https://www.instagram.com" target="_blank">
                 <svg class="social-list__icon" viewBox="0 0 32 32">
@@ -367,21 +379,21 @@
               </a>
             </li>
             <li class="social-list__item">
-              <a href="social-list__link" href="https://twitter.com" target="_blank">
+              <a class="social-list__link" href="https://twitter.com" target="_blank">
                 <svg class="social-list__icon">
                   <use href="assets/icons/common.svg#twitter" />
                 </svg>
               </a>
             </li>
             <li class="social-list__item">
-              <a href="social-list__link" href="https://www.facebook.com" target="_blank">
+              <a class="social-list__link" href="https://www.facebook.com" target="_blank">
                 <svg class="social-list__icon" viewBox="0 0 18 32">
                   <use href="assets/icons/common.svg#facebook" />
                 </svg>
               </a>
             </li>
             <li class="social-list__item">
-              <a href="social-list__link" href="https://www.linkedin.com" target="_blank">
+              <a class="social-list__link" href="https://www.linkedin.com" target="_blank">
                 <svg class="social-list__icon" viewBox="0 0 32 32">
                   <use href="assets/icons/common.svg#linkedin" />
                 </svg>

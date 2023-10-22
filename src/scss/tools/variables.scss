@@ -1,6 +1,9 @@
 //* Vars
 $layoutColor: #fff;
 $textColor: #212121;
+$grayColor: #F5F4FA;
+
+$primaryTransition: 0.4s ease;
 
 //** Fonts by default:
 $fontFamily: "Roboto"; //? name
@@ -8,7 +11,7 @@ $fontSize: rem(16); //? size
 $fontColor: $textColor; //? color
 
 $minWidth: 320; //? min width of layout
-$maxWidthContainer: 1600; //? max width of container
+$maxWidthContainer: 1170; //? max width of container
 $containerPadding: 15; //? padding for container
 $containerWidth: $maxWidthContainer + $containerPadding * 2; //? width full container
 

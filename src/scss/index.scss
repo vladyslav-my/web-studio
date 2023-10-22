@@ -2,7 +2,12 @@
 
 @import "tools/mixins";
 @import "tools/variables";
+
 @import "layout/common/null";
 @import "layout/common/fonts";
+@import "layout/common/flexability-image";
+
+@import "layout/pages/studio";
+@import "layout/pages/portfolio";
 
 @import "components/container";
