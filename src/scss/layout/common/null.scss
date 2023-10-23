@@ -22,6 +22,10 @@ body {
 	height: 100%;
 }
 
+address {
+	font-style: inherit;
+}
+
 body {
 	color: $fontColor;
 	background: $layoutColor;
