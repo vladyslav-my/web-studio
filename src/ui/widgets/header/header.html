@@ -1,46 +1,96 @@
-<header class="header" hidden>
-   <div class="header__container">
-      <a class="logo" href="index.html">
-         <svg class="logo__icon" viewBox="0 0 232 32">
-            <use href="assets/icons/common.svg#logo" />
-         </svg>
-      </a>
-      <nav class="nav header__nav">
-         <ul class="nav__list">
-            <li class="nav__item">
-               <a href="index.html" class="nav__link">Студія</a>
-            </li>
-            <li class="nav__item">
-               <a href="pages/portfolio.html" class="nav__link">Портфоліо</a>
-            </li>
-            <li class="nav__item">
-               <a href="#" class="nav__link">Контакти</a>
-            </li>
-         </ul>
-      </nav>
-      <div class="header__contact contact">
+<header class="header">
+  <div class="header__container">
+    <a class="logo header__logo" href="index.html">
+      <svg class="logo__icon">
+        <use href="assets/icons/common.svg#logo" />
+      </svg>
+    </a>
+    <nav class="nav nav_primary header__nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="index.html" class="nav__link">Студія</a>
+        </li>
+        <li class="nav__item">
+          <a href="pages/portfolio.html" class="nav__link">Портфоліо</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Контакти</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__contact contact contact_header">
+      <ul class="contact__list">
+        <li class="contact__item">
+          <a
+            href="mailto:info@devstudio.com"
+            class="contact__link"
+            target="_blank"
+          >
+            <svg class="contact__icon contact__icon_email" viewBox="0 0 43 32">
+              <use href="assets/icons/common.svg#email" />
+            </svg>
+            info@devstudio.com
+          </a>
+        </li>
+        <li class="contact__item">
+          <a href="tel:+380961111111" class="contact__link">
+            <svg class="contact__icon contact__icon_smartphone" viewBox="0 0 20 32">
+              <use href="assets/icons/common.svg#smartphone" />
+            </svg>
+            +38 096 111 11 11
+          </a>
+        </li>
+      </ul>
+    </div>
+    <button class="burger-button header__burger-button">
+      <span class="burger-button__item"></span>
+    </button>
+  </div>
+  <div class="burger-menu header__burger-menu">
+    <nav class="nav nav_secondary burger-menu__nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="index.html" class="nav__link">Студія</a>
+        </li>
+        <li class="nav__item">
+          <a href="pages/portfolio.html" class="nav__link">Портфоліо</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Контакти</a>
+        </li>
+      </ul>
+    </nav>
+      <div class="burger-menu__contact contact contact_burger-menu">
          <ul class="contact__list">
-            <li class="contact__item">
-               <a
-                  href="mailto:info@devstudio.com"
-                  class="contact__link"
-                  target="_blank"
-               >
-                  <svg class="contact__icon" viewBox="0 0 43 32">
-                     <use href="assets/icons/common.svg#email" />
-                  </svg>
-                  info@devstudio.com
-               </a>
-            </li>
-            <li class="contact__item">
-               <a href="tel:+380961111111" class="contact__link">
-                  <svg class="contact__icon" viewBox="0 0 20 32">
-                     <use href="assets/icons/common.svg#smartphone" />
-                  </svg>
-                  +38 096 111 11 11
-               </a>
-            </li>
+           <li class="contact__item">
+             <a
+               href="mailto:info@devstudio.com"
+               class="contact__link"
+               target="_blank"
+             >
+               info@devstudio.com
+             </a>
+           </li>
+           <li class="contact__item_number">
+             <a href="tel:+380961111111" class="contact__link">
+               +38 096 111 11 11
+             </a>
+           </li>
          </ul>
       </div>
-   </div>
+      <ul class="social-list-2 burger-menu__social-list">
+        <li class="social-list-2__item">
+          <a href="" class="social-list-2__link">Instagram</a>
+        </li>
+        <li class="social-list-2__item">
+          <a href="" class="social-list-2__link">Twitter</a>
+        </li>
+        <li class="social-list-2__item">
+          <a href="" class="social-list-2__link">Facebook</a>
+        </li>
+        <li class="social-list-2__item">
+          <a href="" class="social-list-2__link">LinkedIn</a>
+        </li>
+      </ul>
+  </div>
 </header>
