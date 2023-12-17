@@ -3,7 +3,7 @@
      <div class="footer__info">
        <a class="logo footer__logo" href="pages/portfolio.html">
          <svg class="logo__icon">
-           <use href="assets/icons/common.svg#logo" />
+           <use href="./src/assets/icons/common.svg#logo" />
          </svg>
        </a>
        <address class="contact contact_footer">
@@ -27,23 +27,19 @@
      </div>
      <div class="footer__social">
        <h2 class="footer__title">приєднуйтесь</h2>
-       <%- 
-          include("../../shared/social-list/social-list.html", { 
-                className: "footer__social-list social-list_secondary"
-              }
-          )
-        %>
+        {% set className = "footer__social-list social-list_secondary" %}
+        {% include "ui/shared/social-list/social-list.njk" %}
      </div>
      <div class="footer__sending">
        <h2 class="footer__title">Підпишіться на розсилку</h2>
        <form class="footer__form">
-         <div class="input footer__input">
+         <div class="input input_primary footer__input">
            <input class="input__this" placeholder="E-mail" type="text">
          </div>
-         <button class="button button_medium" type="submit">
+         <button class="button button_medium button_color_blue" type="submit">
             Підписатися
            <svg class="button__icon">
-             <use href="assets/icons/common.svg#send" />
+             <use href="./src/assets/icons/common.svg#send" />
            </svg>
          </button>
        </form>

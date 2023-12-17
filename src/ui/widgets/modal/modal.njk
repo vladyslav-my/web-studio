@@ -1,0 +1,46 @@
+<div class="modal">
+  <div class="modal__containing">
+    <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
+    <form class="modal-form" action="" method="post">
+      <div class="modal-form__field">
+        <label class="modal-form__label" for="username">Ім'я</label>
+        <div class="input input_secondary modal-form__input">
+          <svg class="input__icon input__icon_user">
+            <use href="./src/assets/icons/common.svg#user" />
+          </svg>
+          <input class="input__this" type="text" name="username">
+        </div>
+      </div>
+      <div class="modal-form__field">
+        <label class="modal-form__label" for="phone">Телефон</label>
+        <div class="input input_secondary modal-form__input">
+          <svg class="input__icon input__icon_phone">
+            <use href="./src/assets/icons/common.svg#phone" />
+          </svg>
+          <input class="input__this" type="text" name="phone">
+        </div>
+      </div>
+      <div class="modal-form__field">
+        <label class="modal-form__label" for="email">Пошта</label>
+        <div class="input input_secondary modal-form__input">
+          <svg class="input__icon input_secondary input__icon_user">
+            <use href="./src/assets/icons/common.svg#email-2" />
+          </svg>
+          <input class="input__this" type="text" name="email">
+        </div>
+      </div>
+      <div class="modal-form__field">
+        <label class="modal-form__label" for="email">Коментар</label>
+        <textarea class="modal-form__textarea" placeholder="Введіть текст"></textarea>
+      </div>
+      <div class="modal-form__approval approval">
+        <input class="approval__checkbox" type="checkbox" name="approval">
+        <label class="approval__label" for="approval">
+          Погоджуюся з розсилкою та приймаю 
+          <a class="approval__link" href="#">Умови договору</a>
+        </label>
+      </div>
+      <button class="button button_medium button_color_blue modal-form__submit" type="submit">Відправити</button>
+    </form>
+  </div>
+</div>

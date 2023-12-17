@@ -1,131 +1,20 @@
-.main {
+.portfolio {
 
-   // .main__section
+   // .portfolio__filters
 
-   &__section {
-      padding: em(94) 0;
+   &__filters {
+      justify-content: center;
 
-      // .main__section_style
-
-      &_style {
-         
-         &_welcome {
-
+      @media (max-width: em($mobile)) {
+         &:not(:last-child) {
+            margin-bottom: rem(40);
          }
       }
-   }
-}
-.welcome-section {
 
-   // .welcome-section__background
-
-   &__background {
-   }
-
-   // .welcome-section__title
-
-   &__title {
-   }
-
-   // .welcome-section__button
-
-   &__button {
-   }
-}
-.button {
-}
-.features-section {
-
-   // .features-section__container
-
-   &__container {
-   }
-}
-.grid-for-cards {
-
-   // .grid-for-cards_v1
-
-   &_v1 {
-   }
-
-   // .grid-for-cards_v4
-
-   &_v4 {
-   }
-
-   // .grid-for-cards_v3
-
-   &_v3 {
-   }
-}
-.feature-card {
-
-   // .feature-card__icon-background
-
-   &__icon-background {
-   }
-
-   // .feature-card__icon
-
-   &__icon {
-   }
-
-   // .feature-card__title
-
-   &__title {
-   }
-
-   // .feature-card__text
-
-   &__text {
-   }
-}
-.study-section {
-
-   // .study-section__container
-
-   &__container {
-   }
-
-   &__title {
-      &:not(:last-child) {
-         margin-bottom: rem(50);
-      }
-   }
-}
-.section-title {
-   text-align: center;
-   letter-spacing: em(1.08);
-
-   font-size: em(36);
-   font-weight: 700;
-}
-.team-section {
-   background: $grayColor;
-
-   // .team-section__container
-
-   &__container {
-   }
-
-   &__title {
-      &:not(:last-child) {
-         margin-bottom: rem(50);
-      }
-   }
-}
-.clients-section {
-
-   // .clients-section__container
-
-   &__container {
-   }
-
-   // .clients-section__title
-
-   &__title {
-      &:not(:last-child) {
-         margin-bottom: rem(50);
+      @media (min-width: em($mobile)) {
+         &:not(:last-child) {
+            margin-bottom: rem(50);
+         }
       }
    }
 }

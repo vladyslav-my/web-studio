@@ -1,0 +1,23 @@
+{% extends 'ui/widgets/layout/layout.njk' %}
+
+{% block content %}
+   <main class="main" >
+      <section class="main__section portfolio-section">
+         <div class="portfolio__container">
+            <div class="buttons-group portfolio__filters">
+               <button class="button button_small button_color_blue" type="button">Усі</button>
+               <button class="button button_small" type="button">Веб-сайти</button>
+               <button class="button button_small" type="button">Додатки</button>
+               <button class="button button_small" type="button">Дизайн</button>
+               <button class="button button_small" type="button">Маркетинг</button>
+            </div>
+            <div class="grid-for-cards grid-for-cards_v2">
+               {% for portfolioCard in portfolioCards %}
+                  {% set card = portfolioCard %}
+                  {% include "ui/shared/portfolio-card/portfolio-card.njk" %}
+               {% endfor %} 
+            </div>
+         </div>
+      </section>
+   </main>
+{% endblock %}

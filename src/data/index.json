@@ -1,0 +1,88 @@
+{
+  "template": "ui/shared/pages/index.njk",
+  "featureCards": [
+    {
+      "src": "./src/assets/icons/features.svg#antenna",
+      "title": "УВАГА ДО ДЕТАЛЕЙ",
+      "text": "Ідейні міркування, і навіть початок повсякденної роботи з формування позиції."
+    },
+    {
+      "src": "./src/assets/icons/features.svg#clock",
+      "title": "ПУНКТУАЛЬНІСТЬ",
+      "text": "Завдання організації, особливо рамки і місце навчання кадрів тягне у себе."
+    },
+    {
+      "src": "./src/assets/icons/features.svg#diagram",
+      "title": "ПЛАНУВАННЯ",
+      "text": "Так само консультація з широким активом значною мірою зумовлює."
+    },
+    {
+      "src": "./src/assets/icons/features.svg#astronaut",
+      "title": "СУЧАСНІ ТЕХНОЛОГІЇ",
+      "text": "Значимість цих проблем настільки очевидна, що реалізація планових завдань."
+    }
+  ],
+  "studyCards": [
+    {
+      "src": "./src/assets/contents/studio/study/1.jpg",
+      "alt": "desktop app",
+      "title": "Десктопні додатки"
+    },
+    {
+      "src": "./src/assets/contents/studio/study/2.jpg",
+      "alt": "mobile app",
+      "title": "Мобільні додатки"
+    },
+    {
+      "src": "./src/assets/contents/studio/study/3.jpg",
+      "alt": "design-solution",
+      "title": "Дизайнерські рішення"
+    }
+  ],
+  "teamCards": [
+    {
+      "src": "./src/assets/contents/studio/teams/1.jpg", 
+      "alt": "person", 
+      "title": "Ігор Дем'яненко", 
+      "text": "Product Designer"
+    },
+    {
+      "src": "./src/assets/contents/studio/teams/2.jpg", 
+      "alt": "person", 
+      "title": "Ольга Рєпіна", 
+      "text": "Frontend Developer"
+    },
+    {
+      "src": "./src/assets/contents/studio/teams/3.jpg", 
+      "alt": "person", 
+      "title": "Микола Тарасов", 
+      "text": "Marketing"
+    },
+    {
+      "src": "./src/assets/contents/studio/teams/4.jpg", 
+      "alt": "person", 
+      "title": "Михайло Єрмаков", 
+      "text": "UI Designer"
+    }
+  ],
+  "clientCards": [
+    {
+      "src": "./src/assets/icons/clients.svg#1"
+    },
+    {
+      "src": "./src/assets/icons/clients.svg#2"
+    },
+    {
+      "src": "./src/assets/icons/clients.svg#3"
+    },
+    {
+      "src": "./src/assets/icons/clients.svg#4"
+    },
+    {
+      "src": "./src/assets/icons/clients.svg#5"
+    },
+    {
+      "src": "./src/assets/icons/clients.svg#6"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{% extends 'ui/widgets/layout/layout.njk' %}
+
+{% block content %}
+   <main class="main">
+      <section class="welcome-section">
+         <img
+            class="welcome-section__image"
+            src="./src/assets/contents/studio/welcome.jpg"
+            alt="welcome"
+            width="1600"
+            height="600">
+         <div class="welcome-section__wrapper">
+            <h1 class="welcome-section__title">Ефективні рішення для вашого бізнесу</h1>
+            <button class="button button_medium button_color_blue welcome-section__button" type="button">Замовити послугу</button>
+         </div>
+      </section>
+      <section class="benefits-section main__section">
+         <div class="benefits-section__container">
+            <section>
+               <ul class="grid-for-cards grid-for-cards_v1">
+                  {% for featureCard in featureCards %}
+                     {% set card = featureCard  %}
+                     {% include 'ui/shared/feature-card/feature-card.njk' %}
+                  {% endfor %}
+               </ul>
+            </section>
+            <section>
+               <h2 class="section-title study-section__title">Чим ми займаємося</h2>
+               <ul class="grid-for-cards grid-for-cards_v1">
+                  {% for studyCard in studyCards %}
+                     {% set card = studyCard  %}
+                     {% include 'ui/shared/study-card/study-card.njk' %}
+                  {% endfor %}
+               </ul>
+            </section>
+         </div>
+      </section>
+      <section class="main__section main__section_color_gray">
+         <div class="team-section__container">
+            <h2 class="section-title team-section__title">Наша команда</h2>
+            <ul class="grid-for-cards grid-for-cards_v4">
+               {% for teamCard in teamCards %}
+                  {% set card = teamCard  %}
+                  {% include 'ui/shared/team-card/team-card.njk' %}
+               {% endfor %}
+            </ul>
+         </div>
+      </section>
+      <section class="main__section clients-section">
+         <div class="clients-section__container">
+            <h2 class="section-title clients-section__title">Постійні клієнти</h2>
+            <ul class="grid-for-cards grid-for-cards_v3">
+               {% for clientCard in clientCards %}
+                  {% set card = clientCard  %}
+                  {% include 'ui/shared/client-card/client-card.njk' %}
+               {% endfor %}
+            </ul>
+         </div>
+      </section>
+   </main>
+{% endblock %}

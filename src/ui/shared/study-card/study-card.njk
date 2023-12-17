@@ -2,13 +2,13 @@
    <div class="study-card__flexability-image">
       <img
          class="study-card__image"
-         src="<%= src %>"
-         alt="<%= alt %>"
+         src="{{ card.src }}"
+         alt="{{ card.alt }}"
          width="370"
          height="294"
       />
    </div>
    <div class="study-card__title-background">
-      <h3 class="study-card__title"><%= title %></h3>
+      <h3 class="study-card__title">{{ card.title }}</h3>
    </div>
 </li>

@@ -1,0 +1,147 @@
+.modal {
+   position: fixed;
+   z-index: 100;
+
+   display: grid;
+   overflow: scroll;
+   place-items: center;
+
+   padding: rem(15);
+
+   border-radius: 4px;
+   background: rgba(0, 0, 0, 0.20);
+   inset: 0;
+
+   // .modal__title
+
+   &__title {
+      text-align: center;
+      letter-spacing: em(0.6, 20);
+
+      font-size: em(20);
+      font-weight: 700;
+      line-height: math.div(30, 20);
+      
+      &:not(:last-child) {
+         margin-bottom: rem(10);
+      }
+   }
+
+   &__containing {
+      padding: em(40);
+
+      border-radius: 4px;
+      background: #FFF;
+      box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+   }
+}
+
+.modal-form {
+   // display: grid;
+   // display: flex;
+   // align-items: center;
+   // flex-direction: column;
+   // gap: em(10);
+   // .modal-form__field
+
+   &__field {
+   }
+
+   // .modal-form__label
+
+   &__label {
+      letter-spacing: em(0.12, 12);
+
+      color: #757575;
+
+      font-size: em(12);
+      font-weight: 400;
+
+      &:not(:last-child) {
+         margin-bottom: rem(4);
+      }
+   }
+
+
+   // .modal-form__textarea
+
+   &__textarea {
+      width: 100%;
+      height: em(96);
+      padding: em(12) em(16);
+
+      resize: none;
+      transition: border $primaryTransition;
+
+      
+      border: 1px solid rgba(33, 33, 33, 0.20);
+      border-radius: 4px;
+
+      &:focus {
+         border: 1px solid #2196F3;
+      }
+   }
+
+   // .modal-form__approval
+
+   &__approval {
+      // justify-self: center;
+   }
+}
+.input {
+
+   // .input__icon
+
+   &__icon {
+   }
+
+   // .input__this
+
+   &__this {
+   }
+}
+.approval {
+   display: inline-block;
+   gap: em(8);
+
+   // .approval__checkbox
+
+   &__checkbox {
+      margin-right: em(8);
+
+      vertical-align: middle;
+   }
+
+   // .approval__label
+
+   &__label {
+      letter-spacing: em(0.42, 14);
+
+      color: #757575;
+
+      font-family: Roboto;
+      font-size: em(14);
+      font-weight: 400;
+      line-height: math.div(24, 14);
+   }
+
+   // .approval__link
+
+   &__link {
+      text-decoration: underline;
+
+      color: #2196F3;
+   }
+}
+.button {
+
+   // .button_big
+
+   &_big {
+   }
+}
+
+
+// body {
+//    overflow: hidden;
+// }
